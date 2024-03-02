@@ -1,0 +1,447 @@
+body, html {
+    height:100%;
+    width: 100%;
+  }
+
+  
+  
+
+  /*this is affecting all my links*/
+  a {
+      color:rgb(108, 108, 108);
+      display: inline-block;
+      margin: 10px;
+      border-style: solid;
+      border-width: 9px;
+      border-image: url(images/2jXrMdE.png) 11 round;
+      font-size: 1rem;
+      font-family: 'Nanum Gothic'
+  }
+
+  #display {
+    display: flex;
+    width: 640px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  
+  /*this is affecting all my <h1> elements (headers), but I only have one*/
+  h1 {
+      color:rgb(196, 255, 100);
+      text-align: center;
+      font-family: 'Imperial Script', cursive;
+      font-size: 180px;
+      position:relative;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      z-index: 1;
+      margin-top: 19vh; /*this is a unit we didn't cover yet. It adds margin on the top that is equivalent to half (50 out of 100) the Viewport Height (vh), meaning browser window height.*/ 
+  }
+
+  h2 {
+    font-family: 'French', sans-serif;
+    font-size: 18px;
+    color: #fffcf5;
+    text-shadow: -1px 0 #ffc7d1, 0 1px #ffc7d1, 1px 0 #ffc7d1, 0 -1px #ffc7d1;
+    background-image:url("https://foollovers.com/mat/baf/frill/fr200-015-d.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding:10px;
+    margin-bottom: 15px;
+ }
+  
+
+  h3 {
+      font-family: 'Nanum Gothic', sans-serif;
+      margin: 0px;
+      font-size: 1.2rem;
+      color: #3a3a3a;
+      filter: drop-shadow(0px 0px 1px rgb(246, 201, 201)) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(1px 1px 1px rgba(116, 116, 116, 0.623));
+  }
+  
+
+  p {
+      color:rgb(0, 0, 0);
+      text-align: center;
+      font-family: kiwi;
+      font-size: 28px;
+  }
+  
+  .container {
+    width: 100%;
+    height: auto;
+    border: 2px groove lightgray;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #fffcf5;
+    padding-bottom: 5px;
+    overflow-x:hidden;
+  }
+
+
+  .user_profile_cap {
+    width: 970;
+    height: auto 13;
+    border: 1px solid #DDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+      overflow:hidden;
+  }
+  
+  .user_profile_cover {
+    img {
+      width: 100%;
+      height: 115px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+          }
+  
+  }
+  
+  .user_profile_headline {
+    padding: 10px;
+    font-size: 16px;
+    background-color:white;
+  }
+  .user_profile_headline img{
+      border:1px solid #EEEEEE;
+      width:124px;
+      height:124px;
+      float:left;
+      margin:-90px 10px 0  0;
+      position:relative;
+      z-index:111;
+      
+      background-color:white;
+  }
+  .user_profile_headline h2{
+   
+      margin:0;
+      padding:0;
+      font-size:12px;
+      font-weight:bold;
+      display:block;   
+  }
+  .user_profile_headline span{
+      font-size:10px;
+      font-family:verdana;
+      color:gray;
+   
+  } 
+
+.statusbox {
+     height:150px;
+     width:175px;
+     overflow:auto;
+     padding-left: 7px;
+     border-radius:5px 5px 0px 0px;
+     background:white;
+     border-style:ridge;
+     border-width:2px;
+     border-color:#FFAEDA;
+     display: grid;
+     
+     
+     
+
+}
+
+main {
+  background-color: #fae1e1;
+  flex: 1;
+  padding: 20px;
+  order: 2;
+}
+
+
+::selection {
+  background: ivory;  
+  color: #ffaeda;
+}
+::moz-selection {
+  background:ivory;
+  color: #ffaeda;
+}
+
+.toplace {
+  overflow: hidden;
+  background-image: url("images/toplace.png");
+  position: absolute;
+  top: 0;
+  height: 34px;
+  width: 80%;
+}
+
+.bottomlace {
+  overflow: hidden;
+  background-image: url("images/bottomlace.png");
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 34px;
+  width: 80%;
+}
+
+
+main {
+  flex-grow: 1;
+  margin-left: 180px;
+  z-index: 1;
+}
+
+.text2 {
+  height:360px;
+  overflow-y:auto;
+  }
+
+  .stamps {
+    width: auto;
+    height: 55px;
+    border-style: ridge;
+    border-color: #ffaeda;
+    border-radius: 5px;
+    border-width: 2px;
+    background: linear-gradient(to bottom, #fff 1%, #FFDFF3 100%);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+div.gallery {
+  margin: 3px;
+  float: left;
+  width: 175px;
+  border-width:7px;
+  border-style:solid;
+  border-image: url("images/stampborder.png") 8 fill round;
+  background-image: url(images/checker.png);
+
+}
+
+div.gallery:hover {
+  border-width:7px;
+  border-style:solid;
+  border-image: url("images/checker.png") 8 fill round;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+.footer {
+  width: auto;;
+  height: 35px;
+  border: 3px ridge white;
+  background: linear-gradient(to top, #FFF, #FFE7F1 50%, #FFF);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#leftSidebar {
+  order: 1;
+}
+
+aside {
+  background-size: contain;
+  width: 200px;
+  padding: 15px;
+  outline: 2px solid #ffe6e8;
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+* {
+  box-sizing: border-box;
+}
+user agent stylesheet
+aside {
+  display: block;
+}
+
+@font-face {
+  font-family: French;
+  src: url('includes/SPIRIT.TTF');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Dog;
+  src: url('includes/YURUMOJI.TTF');
+}
+
+@font-face {
+  font-family: kiwi;
+  src: url('includes/basiic.ttf');
+}
+
+
+
+::-webkit-scrollbar {
+width: 14px;
+height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(90deg, rgba(238,238,238,1) 38%, rgba(206,206,206,1) 62%);
+border: 1.5px solid #888888;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: linear-gradient(90deg, rgba(230,230,230,1) 6%, rgba(240,240,240,1) 18%);
+}
+
+::-webkit-scrollbar-button {
+display: block;
+width: 14px;
+height: 16px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+background: white;
+border: 1.5px solid #888888;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment {
+display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:decrement {
+display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+background: white;
+border: 1.5px solid #888888;
+
+}
+
+
+.neonText {
+  color: #ffffff;
+  text-shadow: 0 0 3px #ffa3d7, 0 0 5px #ff4ab4;
+  font-size: 50px;
+  line-height: 55px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: -100px;
+  
+}
+
+
+.meow2 {
+  border-width: 7px;
+  padding: 6px;
+  width: 48%;
+  background-color: #cadead;
+  background-image: url(images/checker.png);
+  border-style: solid;
+  border-image: url(images/download-42.png) 11 round;
+  margin: 5px;
+}
+
+
+#poptext {
+   text-align: center;
+  font-weight:bold; 
+   font-size:2em;
+  animation: pop 1s ease-in-out infinite alternate;
+   color: #fff;
+   -webkit-animation: pop 1s ease-in-out infinite alternate;
+   -moz-animation: pop 1s ease-in-out infinite alternate;
+   background: linear-gradient(to top, #FFE0ED 0%, #FF78B1 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #000000;
+   padding: 5px;
+  }
+  
+  @keyframes pop {
+  from {
+  transform:scale(0.95)
+  }
+  
+  50% {
+  transform:scale(1)
+  }
+  
+  to {
+  transform:scale(0.95)
+  }
+  }
+  
+  @-webkit-keyframes pop {
+  from {
+  -webkit-transform:scale(0.95)
+  
+  }
+  
+  50% {
+  -webkit-transform:scale(1)
+  
+  }
+  
+  to {
+  -webkit-transform:scale(0.95)
+  
+  }
+  }
+  
+  #text01 {
+    border-width:7px;
+    font-family: French;
+    border-style:solid;
+    border-image: url("images/fo32-008-a.gif") 7 fill round;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    }
+
+    .violet::before,
+    .violet > .title-bar {
+      background-color: #805ba5;
+    }
+
+    .violet::before,
+    .violet > .title-bar {
+      background-color: #805ba5;
+    }
+
